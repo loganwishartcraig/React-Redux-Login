@@ -25,3 +25,5 @@ All requests to the API service need authentication passed either as a 'x-access
 
 Connects to a local DB, no records are saved elsewhere. 
 Edit JWT secret key or the DB config in config.js
+
+Note: signup page is not react/flux
