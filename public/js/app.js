@@ -21701,8 +21701,8 @@
 	      if (window.sessionStorage.token) {
 	        return _react2['default'].createElement(
 	          'h1',
-	          null,
-	          'YOURE LOGGED IN!'
+	          { className: 'welc--header--lg' },
+	          'YOU\'RE LOGGED IN!'
 	        );
 	      } else {
 	        return _react2['default'].createElement(_LoginContainer.LoginModule, null);

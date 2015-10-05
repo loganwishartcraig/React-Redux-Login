@@ -28,14 +28,14 @@ body {
 }
 
 
-.login--container {
+.signup--container {
   width: 22%;
   min-width: 275px;
   text-align: center;
   padding: 3rem 0;
-  border: 1px solid #e08032;
+  border: 1px solid #3f556b;
   border-radius: 5px;
-  box-shadow: 0 0 3px 0px #e08032;
+  box-shadow: 0 0 3px 0px #3f556b;
   background-color: #141314;
   position: absolute;
   top: 50%;
@@ -43,11 +43,11 @@ body {
   transform: translate(50%, -50%);
 }
 
-.login--header {
+.signup--header {
   margin-bottom: 3rem;
 }
 
-*[class^="login--btn"] {
+*[class^="signup--btn"] {
   display: block;
   outline: none;
   border: none;
@@ -57,24 +57,15 @@ body {
   text-decoration: none;
 }
 
-.login--btn--submit {
+.signup--btn--submit {
   padding: .85rem 3rem;
-  margin: 3rem auto 1.5rem auto;
-  background-color: #e08032;
-  box-shadow: 0 0 5px 0 #e08032;  
+  margin: 1.5rem auto;
+  background-color: #3f556b;
+  box-shadow: 0 0 5px 0 #3f556b;  
   font-size: 1rem;
 }
 
-.login--btn--signup {  
-  width: 105px;
-  padding: .5rem 2rem;
-  margin: 0 auto;
-  background-color: #3f556b;
-  box-shadow: 0 0 5px 0 #3f556b;
-  font-size: .7rem;
-}
-
-*[class^='login--input'] {
+*[class^='signup--input'] {
   display: block;
   margin: .5rem auto 1.5rem auto;
   padding: .7rem .65rem;
@@ -89,13 +80,6 @@ body {
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
 }
 
-.login--input--password {
+.signup--input--password {
   letter-spacing: .2rem;
-}
-
-.welc--header--lg {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
 }

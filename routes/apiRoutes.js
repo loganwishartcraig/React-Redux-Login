@@ -2,8 +2,33 @@ var express = require('express');
 var router = express.Router();
 
 var User = require('../models/user');
+var userService = require('../services/userService');
+
 var authKey = require('../config.js').authKey;
-var jwt = require('jsonwebtoken')
+var jwt = require('jsonwebtoken');
+
+
+
+
+router.post('/addUser', function(req, res) {
+
+  var username = req.body.username;
+  var password = req.body.password;
+
+  userService.findUser(username, function(err, user) {
+    if (err) res.json({success: false, message: 'Internal Error 2.2'});
+
+    if (user) {
+      res.json({success: false, message: 'User already found'});
+    } else {
+      userService.addUser(username, password, function(err, user) {
+        if (err) res.json({success: false, message: err.message});
+        if (user) res.redirect('/', 301);
+      });
+    }
+  });
+
+})
 
 
 router.post('/authenticate', function(req, res) {
@@ -11,7 +36,7 @@ router.post('/authenticate', function(req, res) {
   User.findOne({
     username: req.body.username
   }, function(err, user) {
-    if (err) throw err;
+    if (err) console.error(err);
 
     if (!user) {
       res.json({success: false, message: 'Autentication failed. User not found'})

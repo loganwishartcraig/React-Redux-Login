@@ -9,7 +9,7 @@ export default class App extends Component {
 
 
     if (window.sessionStorage.token) {
-      return(<h1>YOURE LOGGED IN!</h1>);
+      return(<h1 className={'welc--header--lg'}>YOU'RE LOGGED IN!</h1>);
     } else {
     return(<LoginModule/>);
     }
