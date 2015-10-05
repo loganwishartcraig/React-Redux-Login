@@ -1,2 +1,24 @@
 # React-Redux-Login
-An overly complicated stateful login screen
+An overly complicated stateful login screen built with React and Redux.
+
+Used to practice the principles of implementing Redux, ES6 syntax, and JSON Web Token authentication.
+
+To start, install the dependencies: 
+```
+npm install
+```
+
+Spin up mongodb
+```
+mongod
+```
+
+Start the node server 
+```
+node bin/www
+```
+
+Open http://localhost:3000/
+
+Make a new account and login using it. Connects to a local DB so no changes are pushed. 
+Edit JWT secret key/DB config in config.js
