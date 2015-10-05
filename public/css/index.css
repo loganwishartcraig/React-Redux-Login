@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Mic 32Regular';
+  src: url('mic_32regular.ttf')  format('truetype'),
+       url('mic_32regular.woff')  format('woff')
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Mic 32Regular';
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label, li, a {
+  color: #b3b3b3;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #141314;
+  background: url('../images/hex-background.png');
+}
+
+
+.login--container {
+  width: 22%;
+  min-width: 275px;
+  text-align: center;
+  padding: 3rem 0;
+  border: 1px solid #e08032;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0px #e08032;
+  background-color: #141314;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.login--header {
+  margin-bottom: 3rem;
+}
+
+*[class^="login--btn"] {
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login--btn--submit {
+  padding: .85rem 3rem;
+  margin: 3rem auto 1.5rem auto;
+  background-color: #e08032;
+  box-shadow: 0 0 5px 0 #e08032;  
+  font-size: 1rem;
+}
+
+.login--btn--signup {  
+  width: 105px;
+  padding: .5rem 2rem;
+  margin: 0 auto;
+  background-color: #3f556b;
+  box-shadow: 0 0 5px 0 #3f556b;
+  font-size: .7rem;
+}
+
+*[class^='login--input'] {
+  display: block;
+  margin: .5rem auto 1.5rem auto;
+  padding: .7rem .65rem;
+  color: #c2bdbb;
+  background-color: #1f1f1f;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width:75%;
+  font-size: .8rem;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+}
+
+.login--input--password {
+  letter-spacing: .2rem;
+}
