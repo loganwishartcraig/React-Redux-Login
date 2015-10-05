@@ -20,5 +20,8 @@ node bin/www
 
 Open http://localhost:3000/
 
-Make a new account and login using it. Connects to a local DB, no records are saved elsewhere. 
+Make a new account and login using it. 
+All requests to the API service need authentication passed either as a 'x-access-token' header, a '?token=XXXX' URL parameter, or have the 'token: XXXX' key value pair in the body of the request.
+
+Connects to a local DB, no records are saved elsewhere. 
 Edit JWT secret key or the DB config in config.js
