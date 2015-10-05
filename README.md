@@ -20,5 +20,5 @@ node bin/www
 
 Open http://localhost:3000/
 
-Make a new account and login using it. Connects to a local DB so no changes are pushed. 
-Edit JWT secret key/DB config in config.js
+Make a new account and login using it. Connects to a local DB, no records are saved elsewhere. 
+Edit JWT secret key or the DB config in config.js
